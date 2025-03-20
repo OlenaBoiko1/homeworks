@@ -1,0 +1,81 @@
+@import url("reset.css");
+
+/* Селектор "*" */
+
+* {
+  color: midnightblue;
+}
+
+/* Селектор тегу */
+
+h1 {
+  color: brown;
+}
+
+/* Селектор класу */
+
+.easter {
+  color: deeppink;
+}
+
+/* Селектор id */
+
+#short-info {
+  color: chocolate;
+}
+
+/* селектор атрибуту */
+
+[href*="#"] {
+  color: aqua;
+}
+
+/* Вкладеність селекторів */
+
+/* 1 */
+
+.ukrainian-instruments li {
+  color: forestgreen;
+}
+
+/* 2 */
+
+.list .item {
+  color: springgreen;
+}
+
+/* 3 */
+
+.ukrainian-rituals * {
+  color: sienna;
+}
+
+/* 4 */
+
+.summery-info > p {
+  color: darkslateblue;
+}
+
+/* 5 */
+
+.easter ~ li {
+  color: indianred;
+}
+
+/* 6 */
+
+ul > li > span {
+  color: red;
+}
+
+/* 7 */
+
+h2 + p {
+  color: violet;
+}
+
+/* 8 */
+
+footer > p > a {
+  color: darkred;
+}
