@@ -87,7 +87,9 @@ body {
 }
 
 .hydra-about {
-    background-image: url('../img/line-1.svg') center center / 5px no-repeat fixed;
+    background:
+        url('../img/line-1.svg') 0 0 / 100% no-repeat scroll,
+        url('../img/line-2.svg') 50% 75% / 100% no-repeat scroll;
     padding: 50px 0;
     background-color: #302C42;;
 }
@@ -117,7 +119,7 @@ body {
 .hydra-about-img img {
     max-width: 524px;
     width: 100%;
-    border-radius: 240px 100px;
+    border-radius: 45.8% 19.08% 45.8% 19.08% / 43.35% 18.06% 43.35% 18.06%;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
