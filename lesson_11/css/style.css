@@ -1,0 +1,384 @@
+@import url('reset.css');
+
+body {
+    background-color: rgba(254, 28, 149, 0.2);
+    color: rgb(35, 2, 25);
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header__title {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.experiments_block {
+    width: 100%;
+    font-size: 0;
+}
+
+.experiments__items {
+    margin-left: -5px;
+    margin-right: -5px;
+    font-size: 0;
+}
+
+.experiments__item {
+    display: inline-block;
+    margin: 20px;
+    width: 25%;
+    height: 200px;
+    padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+    background-color: blueviolet;
+}
+
+.item-experiment__inner {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(168, 226, 43);
+    border: 1px solid rgb(250, 92, 13);
+}
+
+.item-experiment__inner > p {
+    font-size: 16px;
+    text-align: center;
+    color:  rgb(250, 92, 13);
+}
+
+.experiments__item:hover > .first {
+    transform: translate(30%, 30%);
+}
+
+.item-experiment:hover > .second {
+    transform: translateX(50px);
+}
+
+.item-experiment:hover > .third {
+    transform: translateY(-50px);
+}
+
+.item-experiment:hover > .fourth {
+    transform: scale(1.25);
+}
+
+.item-experiment:hover > .fifth {
+    transform: scale(1, -1);
+}
+
+.item-experiment:hover > .sixth {
+    transform: rotate(130deg);
+}
+
+.item-experiment:hover > .seventh {
+    transform: rotate(-80deg);
+}
+
+.item-experiment:hover > .eighth {
+    transform: skew(15deg, 30deg);
+}
+
+.item-experiment:hover > .ninth {
+    transform: translate(25px, 15px) scale(0.5) rotate(75deg);
+}
+
+.item-experiment:hover > .tenth {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.item-experiment--3D {
+    perspective: 300px;
+    perspective-origin: top;
+    background-color: rgba(93, 43, 72, 0.2);
+    transform-style: preserve-3d;
+}
+
+.item-experiment:hover > .eleventh {
+    transform: translate3d(100px, 10px, 20px);
+}
+
+.item-experiment:hover > .twelfth {
+    transform: rotate3d(20, 20, 80, 45deg);
+}
+
+.item-experiment:hover > .thirteenth {
+    transform: rotateY(45deg);
+}
+
+.flag-test {
+    padding: 50px 0;
+}
+
+.card {
+    display: inline-block;
+}
+
+.card__body {
+    position: relative;
+    perspective: 800px;
+}
+
+.card__body > div {
+    width: 200px;
+}
+
+.card__back {
+    padding: 20px;
+    font-size: 26px;
+    color: rgb(175, 45, 45);
+    text-align: center;
+    transform: rotateX(180deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card__back,
+.card__front {
+	transition: all 0.3s;
+	overflow: hidden;
+}
+
+.card__front {
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+} 
+.card__body:hover .card__back {
+	transform: rotateX(0deg);
+}
+.card__body:hover .card__front {
+	transform: rotateX(-180deg);
+}
+
+.bus-block {
+    min-height: 800px;
+}
+
+.bus-basic {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background-color: rgb(241, 28, 28);
+    border-radius: 40px;
+}
+
+.bumper {
+    content: "";
+    position: absolute;
+    top: 306px;
+    left: -80px;
+    width: 150px;
+    height: 195px;
+    background-color: rgb(241, 28, 28);
+    border-radius: 30%;
+}
+
+.bumper::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    width: 30px;
+    height: 40px;
+    background-color: rgb(197, 178, 51);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.bumper::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    width: 120px;
+    height: 3px;
+    background-color: rgb(105, 11, 11);
+}
+
+.mirror {
+    content: "";
+    position: absolute;
+    top: 180px;
+    left: -30px;
+    width: 30px;
+    height: 50px;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+}
+
+.mirror::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    width: 30px;
+    height: 60px;
+    background-color: black;
+    border-radius: 10%;
+}
+
+
+.bus-roof {
+    position: absolute;
+    top: -10px;
+    left: 180px;
+    width: 540px;
+    height: 15px;
+    background-color: rgb(105, 11, 11);
+    border-radius: 30px;
+}
+
+.bus-top, .bus-bottom {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 142px;
+    width: 100%;
+}
+
+.windows {
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 0;
+}
+
+.windows__item {
+    display: inline-block;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.windows__img {
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.windows__item:first-child > .windows__img {
+    border-top-left-radius: 30px;
+}
+
+.windows__item:last-child > .windows__img {
+    border-top-right-radius: 30px;
+}
+
+.bus-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 900px;
+    height: 5px;
+    background-color: rgb(105, 11, 11);
+}
+
+.line-bus {
+    position: relative;
+    width: 900px;
+    height: 10px;
+    background-color: rgb(105, 11, 11);
+}
+
+.line-bus::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -14px;
+    width: 15px;
+    height: 30px;
+    background-color: rgb(241, 28, 28);
+    border-bottom-right-radius: 50%;
+}
+
+.bus-bottom > .windows > .windows__item:last-child >.windows__img {
+    display: none;
+}
+
+.bus-door {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 160px;
+    height: 285px;
+    background-color: rgba(3, 11, 31, 0.964);
+    border-top-left-radius: 35%;
+}
+
+.bus-door::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 60px;
+    border: 4px solid rgba(219, 223, 233, 0.964);
+    border-left: none;
+}
+
+.bus-line--think {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 730px;
+    height: 2px;
+    background-color: rgb(105, 11, 11);
+}
+
+.bus-wheel {
+    position: absolute;
+    bottom: -60px;
+    left: 100px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.bus-wheel::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(132, 120, 120);
+}
+
+.bus-wheel::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(61, 60, 60);
+}
+
+.bus-wheel:last-child {
+    left: 600px;
+}
+
+
+
