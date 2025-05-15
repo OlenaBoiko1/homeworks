@@ -39,13 +39,8 @@ header, footer {
     background-color: #412672;
 }
 
-.mentors__container {
-    display: flex;
-    gap: 38px;
-    flex-direction: column;
-}
-
 .mentors__title {
+    margin-bottom: 38px;
     color: #FFF;
     font-size: 38px;
     line-height: 1.21;
@@ -70,6 +65,7 @@ header, footer {
     padding: 20px;
     gap: 16px;
     flex: 0 1 386px;
+    transition-duration: 0.3s;
 }
 
 .image {
@@ -95,6 +91,7 @@ header, footer {
     color: #FE3F3F;
     font-size: 15px;
     line-height: 1.27;
+    transition-duration: 0.3s;
 }
 
 .mentors__item:hover  {
@@ -102,7 +99,7 @@ header, footer {
 }
 
 .mentor__link:hover {
-     color: #ac1818;
+    color: #ac1818;
     text-decoration: underline;
 }
 
@@ -150,7 +147,7 @@ header, footer {
 }
 
 .top-teachers__list-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: #4F4F4F;
     font-size: 20px;
@@ -159,9 +156,11 @@ header, footer {
 
 .top-teachers__list-item::before {
    content: "";
-   background-image: url('../img/icon.svg');
+   background: url('../img/icon.svg') 0 0 / 100% no-repeat;
+   align-self: flex-start;
    width: 29px;
    height: 29px;
+   flex-shrink: 0;
 }
 
 .top-teachers__slider-images {
@@ -200,7 +199,7 @@ header, footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 141px;
+    gap: 30px;
 }
 
 .advantages__list-item {
