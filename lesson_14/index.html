@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 14</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1>I`m header</h1>
+            </div>
+        </header>
+        <main class="page">
+            <div class="checkout">
+                <div class="checkout__container">
+                    <form action="#" method="post" class="checkout-form">
+                        <div class="checkout-form__section">
+                            <div class="checkout-form__title">
+                                <h2 class="checkout-form__heading">Billing Information</h2>
+                            </div>
+                            <div class="checkout-form__billing-info">
+                                <div class="checkout-form__row">
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">First name</span>
+                                        <input type="text" name="form[]" placeholder="Your first name" required
+                                            class="checkout-form__input">
+                                    </label>
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Last name</span>
+                                        <input type="text" name="form[]" placeholder="Your last name" required
+                                            class="checkout-form__input">
+                                    </label>
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Company Name
+                                            <span>(optional)</span></span>
+                                        <input type="text" name="form[]" placeholder="Company name"
+                                            class="checkout-form__input">
+                                    </label>
+                                </div>
+                                <div class="checkout-form__row">
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Street Address</span>
+                                        <input type="text" name="form[]" placeholder="Your address" required
+                                            class="checkout-form__input">
+                                    </label>
+                                </div>
+                                <div class="checkout-form__row">
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Country / Region</span>
+                                        <select class="checkout-form__select" name="country" required>
+                                            <option value="" selected>Select</option>
+                                            <option value="ua">Ukraine</option>
+                                            <option value="gb">Great Britain</option>
+                                            <option value="de">Germany</option>
+                                        </select>
+                                    </label>
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">States</span>
+                                        <select class="checkout-form__select" name="state" required>
+                                            <option value="" selected>Select</option>
+                                            <option value="s1">State 1</option>
+                                            <option value="s2">State 2</option>
+                                            <option value="s3">State 3</option>
+                                        </select>
+                                    </label>
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Zip Code</span>
+                                        <input type="text" name="form[]" placeholder="Zip Code"
+                                            class="checkout-form__input">
+                                    </label>
+                                </div>
+                                <div class="checkout-form__row">
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Email</span>
+                                        <input type="email" name="form[]" placeholder="Email Address" required
+                                            class="checkout-form__input">
+                                    </label>
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Phone</span>
+                                        <input type="tel" name="form[]" placeholder="Phone number" required
+                                            class="checkout-form__input">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="checkout-form__row">
+                                <div class="checkout-form__checkbox-wrapper">
+                                    <label class="checkout-form__field">
+                                        <input type="checkbox" name="form[]" class="checkout-form__checkbox">
+                                        <span class="checkout-form__text">Ship to a different address</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="checkout-form__additional-info">
+                                <div class="checkout-form__title">
+                                    <h2 class="checkout-form__heading">Additional Info</h2>
+                                </div>
+                                <div class="checkout-form__notes">
+                                    <label class="checkout-form__field">
+                                        <span class="checkout-form__label">Order Notes (Optional)</span>
+                                        <textarea name="form[]" id="note"
+                                            placeholder="Notes about your order, e.g. special notes for delivery"
+                                            class="checkout-form__textarea"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-form__sidebar">
+                            <div class="checkout-form__order-summary order-summary">
+                                <div class="order-summary__wrapper">
+                                    <div class="order-summary__header">
+                                        <h3 class="order-summary__title">Order Summary</h3>
+                                    </div>
+                                    <div class="order-summary__items">
+                                        <div class="order-summary__row">
+                                            <a href="#" class="order-summary__link">
+                                                <img class="order-summary__img" src="img/green-pepper.png"
+                                                    alt="Photo of green pepper">
+                                                <h4 class="order-summary__name">Green Capsicum
+                                                </h4>
+                                                <p class="order-summary__count">x5</p>
+                                            </a>
+                                            <div class="order-summary__price price">
+                                                <p class="price__value">$70.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="order-summary__row">
+                                            <a href="#" class="order-summary__link">
+                                                <img class="order-summary__img" src="img/red-pepper.png"
+                                                    alt="Photo of red pepper">
+                                                <h4 class="order-summary__name">Red Capsicum
+                                                </h4>
+                                                <p class="order-summary__count">x1</p>
+                                            </a>
+                                            <div class="order-summary__price price">
+                                                <p class="price__value">$14.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-summary__totals totals">
+                                    <div class="totals__row">
+                                        <h4 class="totals__label">Subtotal:</h4>
+                                        <p class="totals__value">$84.00</p>
+                                    </div>
+
+                                    <div class="line line--small"></div>
+
+                                    <div class="totals__row">
+                                        <h4 class="totals__label">Shipping:</h4>
+                                        <p class="totals__value">Free</p>
+                                    </div>
+
+                                    <div class="line line--small"></div>
+
+                                    <div class="totals__row">
+                                        <h4 class="totals__label">Total:</h4>
+                                        <p class="totals__value totals__value--bold">
+                                            $84.00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="payment-method__header">
+                                        <h3 class="payment-method__title">Payment Method</h3>
+                                    </div>
+                                    <div class="payment-method__options">
+                                        <label class="payment-method__option">
+                                            <input checked type="radio" name="form[payment-method]"
+                                                class="payment-method__input">
+                                            <span class="payment-method__label">Cash on Delivery</span>
+                                        </label>
+                                        <label class="payment-method__option">
+                                            <input type="radio" name="form[payment-method]"
+                                                class="payment-method__input">
+                                            <span class="payment-method__label">Paypal</span>
+                                        </label>
+                                        <label class="payment-method__option">
+                                            <input type="radio" name="form[payment-method]"
+                                                class="payment-method__input">
+                                            <span class="payment-method__label">Amazon Pay</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="order-summary__submit-btn">Place Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <h2>I`m footer</h2>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
