@@ -84,6 +84,8 @@ h2[class*="__title"] {
     justify-content: center;
 }
 .product-card {
+    display: flex;
+    flex-direction: column;
     position: relative;
     flex: 0 1 calc(20% + 1px);
     border: 1px solid #e6e6e6;
@@ -139,6 +141,7 @@ h2[class*="__title"] {
     margin-bottom: 6px;
 }
 .product-card__image {
+    flex-grow: 1;
     padding: 5px;
     transition: all 0.5s;
 }
@@ -248,11 +251,14 @@ h2[class*="__title"] {
     gap: 24px;
 }
 .news__item {
+    display: flex;
+    flex-direction: column;
     flex: 0 1 424px;
     border-radius: 8px;
     border: 1px solid  #E6E6E6;
 }
 .news__image {
+    flex-grow: 1;
     position: relative;
 }
 .news__img {
