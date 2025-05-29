@@ -256,6 +256,7 @@ h2[class*="__title"] {
     flex: 0 1 424px;
     border-radius: 8px;
     border: 1px solid  #E6E6E6;
+    transition: all 0.5s;
 }
 .news__image {
     flex-grow: 1;
@@ -400,7 +401,7 @@ h2[class*="__title"] {
 
 @media (max-width: 992px) {
     .product-card {
-        flex: 0 1 calc(25% + 1px);
+        flex: 0 1 calc(33.33333% + 1px);
     }
 }
 
@@ -414,7 +415,7 @@ h2[class*="__title"] {
     }
 
     .product-card {
-        flex: 0 1 calc(33.33333% + 1px);
+        flex: 0 1 calc(50% + 1px);
     }
 
     .news__excerpt {
@@ -442,13 +443,13 @@ h2[class*="__title"] {
 
 @media (max-width: 650px) {
     .product-card {
-        flex: 0 1 calc(50% + 1px);
+        flex: 0 1 75%;
     }
 }
 
 @media (max-width: 450px) {
     .product-card {
-        flex: 0 1 254px;
+        flex: 0 1 100%;
     }
     .news {
         padding-bottom: 20px;
